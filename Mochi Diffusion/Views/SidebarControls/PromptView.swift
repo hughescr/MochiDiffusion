@@ -86,7 +86,7 @@ struct PromptView: View {
                 .sidebarLabelFormat()
             PromptTextEditor(
                 text: $controller.prompt,
-                height: 120,
+                height: 300,
                 focusBinding: $focusCon.promptFieldIsFocused
             )
 
@@ -94,7 +94,7 @@ struct PromptView: View {
                 .sidebarLabelFormat()
             PromptTextEditor(
                 text: $controller.negativePrompt,
-                height: 70,
+                height: 300,
                 focusBinding: $focusCon.negativePromptFieldIsFocused
             )
 
