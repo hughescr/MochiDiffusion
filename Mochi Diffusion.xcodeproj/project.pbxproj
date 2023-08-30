@@ -40,7 +40,6 @@
 		0386DF8D2950F25500CA4CEB /* GalleryToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0386DF8C2950F25500CA4CEB /* GalleryToolbarView.swift */; };
 		0388DEB0297B00FC008B1C1C /* CompactSlider in Frameworks */ = {isa = PBXBuildFile; productRef = 0388DEAF297B00FC008B1C1C /* CompactSlider */; };
 		0395B3112995C70400465B73 /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0395B3102995C70400465B73 /* Scheduler.swift */; };
-		03ADC8B9299581AF00B2843F /* StableDiffusion in Frameworks */ = {isa = PBXBuildFile; productRef = 03ADC8B8299581AF00B2843F /* StableDiffusion */; };
 		03B1ACA8295167B900302F54 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B1ACA7295167B900302F54 /* SettingsView.swift */; };
 		03CB9D18297399AE0041A4FA /* ImageCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CB9D17297399AE0041A4FA /* ImageCommands.swift */; };
 		03D280F2294FD60E00C7D184 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D280F1294FD60E00C7D184 /* PromptView.swift */; };
@@ -52,6 +51,8 @@
 		03F578642967CE9A003A815F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03F578622967CE9A003A815F /* Localizable.strings */; };
 		03FD2319295F74B6006EEEE2 /* RealESRGAN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 03FD2318295F74B6006EEEE2 /* RealESRGAN.mlmodel */; };
 		03FD231B295F7A81006EEEE2 /* Upscaler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FD231A295F7A81006EEEE2 /* Upscaler.swift */; };
+		440409AF2A9EF550007277D3 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 440409AE2A9EF550007277D3 /* ArgumentParser */; };
+		440409B42A9EF776007277D3 /* StableDiffusion in Frameworks */ = {isa = PBXBuildFile; productRef = 440409B32A9EF776007277D3 /* StableDiffusion */; };
 		58FF218829FAE96200A70C7C /* ControlNetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FF218729FAE96200A70C7C /* ControlNetView.swift */; };
 		948853A52A543CB200B4AD86 /* GalleryPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948853A42A543CB200B4AD86 /* GalleryPreviewView.swift */; };
 		9B7392C3298DEAC2006F03D5 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7392C2298DEAC2006F03D5 /* Tokenizer.swift */; };
@@ -130,9 +131,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				036BFC4E294B9FDB00D8AD04 /* Path in Frameworks */,
-				03ADC8B9299581AF00B2843F /* StableDiffusion in Frameworks */,
 				0352E2A5294E2591003FBF25 /* Sparkle in Frameworks */,
+				440409AF2A9EF550007277D3 /* ArgumentParser in Frameworks */,
 				0388DEB0297B00FC008B1C1C /* CompactSlider in Frameworks */,
+				440409B42A9EF776007277D3 /* StableDiffusion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +189,7 @@
 			children = (
 				036BFC20294B9F7500D8AD04 /* Mochi Diffusion */,
 				036BFC1F294B9F7500D8AD04 /* Products */,
+				440409B02A9EF716007277D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,6 +268,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		440409B02A9EF716007277D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,7 +296,8 @@
 				036BFC4D294B9FDB00D8AD04 /* Path */,
 				0352E2A4294E2591003FBF25 /* Sparkle */,
 				0388DEAF297B00FC008B1C1C /* CompactSlider */,
-				03ADC8B8299581AF00B2843F /* StableDiffusion */,
+				440409AE2A9EF550007277D3 /* ArgumentParser */,
+				440409B32A9EF776007277D3 /* StableDiffusion */,
 			);
 			productName = "Mochi Diffusion";
 			productReference = 036BFC1E294B9F7500D8AD04 /* Mochi Diffusion.app */;
@@ -355,7 +366,8 @@
 				036BFC4C294B9FDB00D8AD04 /* XCRemoteSwiftPackageReference "Path.swift" */,
 				0352E2A3294E2591003FBF25 /* XCRemoteSwiftPackageReference "Sparkle" */,
 				0388DEAE297B00FC008B1C1C /* XCRemoteSwiftPackageReference "CompactSlider" */,
-				03ADC8B7299581AF00B2843F /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */,
+				440409AA2A9EF512007277D3 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */,
+				440409AD2A9EF550007277D3 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 			);
 			productRefGroup = 036BFC1F294B9F7500D8AD04 /* Products */;
 			projectDirPath = "";
@@ -530,7 +542,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -723,12 +735,20 @@
 				minimumVersion = 1.0.0;
 			};
 		};
-		03ADC8B7299581AF00B2843F /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */ = {
+		440409AA2A9EF512007277D3 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/ml-stable-diffusion";
+			repositoryURL = "git@github.com:apple/ml-stable-diffusion.git";
 			requirement = {
 				branch = main;
 				kind = branch;
+			};
+		};
+		440409AD2A9EF550007277D3 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -749,9 +769,14 @@
 			package = 0388DEAE297B00FC008B1C1C /* XCRemoteSwiftPackageReference "CompactSlider" */;
 			productName = CompactSlider;
 		};
-		03ADC8B8299581AF00B2843F /* StableDiffusion */ = {
+		440409AE2A9EF550007277D3 /* ArgumentParser */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 03ADC8B7299581AF00B2843F /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */;
+			package = 440409AD2A9EF550007277D3 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		440409B32A9EF776007277D3 /* StableDiffusion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 440409AA2A9EF512007277D3 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */;
 			productName = StableDiffusion;
 		};
 /* End XCSwiftPackageProductDependency section */
